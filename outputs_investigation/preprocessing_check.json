@@ -1,0 +1,24 @@
+{
+  "28x28": {
+    "stored_mean": 0.5719215705660848,
+    "derived_mean": 0.57192157,
+    "mean_diff": 0.0,
+    "mean_ok": true,
+    "stored_std": 0.16835129140378768,
+    "derived_std": 0.16835129,
+    "std_diff": 0.0,
+    "std_ok": true,
+    "same_size_all_splits": true
+  },
+  "64x64": {
+    "stored_mean": 0.5716994252362896,
+    "derived_mean": 0.57169943,
+    "mean_diff": 0.0,
+    "mean_ok": true,
+    "stored_std": 0.1740975287810648,
+    "derived_std": 0.17409753,
+    "std_diff": 0.0,
+    "std_ok": true,
+    "same_size_all_splits": true
+  }
+}

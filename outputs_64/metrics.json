@@ -1,0 +1,39 @@
+{
+  "threshold_05": {
+    "threshold": 0.5,
+    "accuracy": 0.8173076923076923,
+    "balanced_accuracy": 0.7581196581196581,
+    "auroc": 0.9532160859083936,
+    "auprc": 0.9640908032461671,
+    "precision": 0.776,
+    "sensitivity": 0.9948717948717949,
+    "specificity": 0.5213675213675214,
+    "f1_score": 0.8719101123595505,
+    "confusion_matrix": {
+      "tn": 122,
+      "fp": 112,
+      "fn": 2,
+      "tp": 388
+    }
+  },
+  "threshold_opt": {
+    "threshold": 0.9417790770530701,
+    "accuracy": 0.8701923076923077,
+    "balanced_accuracy": 0.8311965811965812,
+    "auroc": 0.9532160859083936,
+    "auprc": 0.9640908032461671,
+    "precision": 0.8351409978308026,
+    "sensitivity": 0.9871794871794872,
+    "specificity": 0.6752136752136753,
+    "f1_score": 0.9048178613396005,
+    "confusion_matrix": {
+      "tn": 158,
+      "fp": 76,
+      "fn": 5,
+      "tp": 385
+    }
+  },
+  "tau_star": 0.9417790770530701,
+  "val_sensitivity": 0.9717223650385605,
+  "val_specificity": 0.9925925925925926
+}

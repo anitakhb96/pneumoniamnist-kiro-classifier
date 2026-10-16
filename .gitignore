@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Downloaded datasets and trained models
+*.npz
+*.pth
+*.pt
+*.ckpt
+
+# Credentials and environment files
+.env
+.env.*
+!.env.example
+.aws/
+.kiro/
+*.pem
+*.key
+
+# Temporary files
+.DS_Store
+*.log
+*.tmp

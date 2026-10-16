@@ -1,0 +1,12 @@
+{
+  "n_test_examples": 624,
+  "n_bootstrap": 10000,
+  "n_skipped": 0,
+  "observed_auroc_64x64": 0.95321609,
+  "observed_auroc_28x28": 0.94888779,
+  "observed_difference": 0.00432829,
+  "bootstrap_mean_diff": 0.00433619,
+  "ci_95_lower": -0.00624873,
+  "ci_95_upper": 0.01562133,
+  "ci_includes_zero": true
+}

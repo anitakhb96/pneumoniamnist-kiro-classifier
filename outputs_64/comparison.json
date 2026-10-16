@@ -1,0 +1,45 @@
+{
+  "caveat": "Differences reflect changes to image resolution, CNN architecture, regularisation, and training procedure combined.",
+  "baseline_28x28_threshold_05": {
+    "accuracy": 0.8253205128205128,
+    "balanced_accuracy": 0.7679487179487179,
+    "auroc": 0.9488877931185624,
+    "auprc": 0.9630315781078505,
+    "sensitivity": 0.9974358974358974,
+    "specificity": 0.5384615384615384,
+    "precision": 0.7826961770623743,
+    "f1_score": 0.8771138669673055
+  },
+  "enhanced_64x64_threshold_05": {
+    "accuracy": 0.8173076923076923,
+    "balanced_accuracy": 0.7581196581196581,
+    "auroc": 0.9532160859083936,
+    "auprc": 0.9640908032461671,
+    "precision": 0.776,
+    "sensitivity": 0.9948717948717949,
+    "specificity": 0.5213675213675214,
+    "f1_score": 0.8719101123595505
+  },
+  "enhanced_64x64_threshold_opt": {
+    "accuracy": 0.8701923076923077,
+    "balanced_accuracy": 0.8311965811965812,
+    "auroc": 0.9532160859083936,
+    "auprc": 0.9640908032461671,
+    "precision": 0.8351409978308026,
+    "sensitivity": 0.9871794871794872,
+    "specificity": 0.6752136752136753,
+    "f1_score": 0.9048178613396005
+  },
+  "tau_star": 0.9417790770530701,
+  "delta_64x64_05_minus_28x28": {
+    "accuracy": -0.008013,
+    "balanced_accuracy": -0.009829,
+    "auroc": 0.004328,
+    "auprc": 0.001059,
+    "sensitivity": -0.002564,
+    "specificity": -0.017094,
+    "precision": -0.006696,
+    "f1_score": -0.005204
+  },
+  "summary": "Comparison summary (28\u00d728 baseline vs 64\u00d764 enhanced pipeline):\n\nThe two pipelines differ in image resolution (28\u00d728 vs 64\u00d764), CNN\narchitecture (2 blocks vs 3 blocks with AdaptiveAvgPool2d), dropout\n(0.3 vs 0.4), and training procedure (fixed 15 epochs vs early stopping\nwith patience=5).  Any performance differences reflect ALL of these\nchanges combined.\n\nDiscrimination (AUROC): 0.9489 \u2192 0.9532  (\u0394 +0.0043)\n  \u2014 improved compared to the 28\u00d728 baseline.\n\nPrecision-Recall (AUPRC): 0.9630 \u2192 0.9641\n\nSensitivity: 0.9974 \u2192 0.9949  (\u0394 -0.0026)\nSpecificity: 0.5385 \u2192 0.5214  (\u0394 -0.0171)\nAccuracy:    0.8253 \u2192 0.8173\n\nAt the Youden-optimal threshold (\u03c4* = 0.9418, selected on the\nvalidation set), the 64\u00d764 pipeline achieves:\n  sensitivity = 0.9872\n  specificity = 0.6752\n  balanced accuracy = 0.8312\n\nTreat this comparison as exploratory: the test set was already examined\nfor the baseline, so it does not provide an unbiased model-selection\nestimate."
+}
